@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 # Use from project root directory
-pdftk cards/card*.pdf cat output cards/cards_combined.pdf
+# Assumes artifacts were generated into build directory.
+pdftk build/card*.pdf cat output build/cards_combined.pdf
