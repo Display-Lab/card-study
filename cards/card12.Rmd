@@ -1,15 +1,15 @@
 ---
-title: "card4"
+title: "card 12"
 author: "DISPLAY Lab"
-date: "2020-03-20"
+date: "2020-03-23"
 mainfont: LiberationSerif
 sansfont: LiberationSans
 monofont: LiberationMono
 output: 
-  html_document:
-    theme: readable
   pdf_document:
     latex_engine: xelatex
+  html_document:
+    theme: readable
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Load data and define recipient
 # Use same performer as card 2
 data <- pictoralist::read_data('synth_data.csv')
-recipient <- 'p2'
+recipient <- 'p9'
 goal_rate <- 0.90
 
 # get most recent performance of performer
@@ -35,7 +35,7 @@ scaled_goal <- round(denominator*goal_rate, 1)
 
 **From:** mpog-quality@med.umich.edu
 
-**Subject:** You have reached the goal for PONV 03
+**Subject:** Your performance is above the goal for PONV 03
 
 \  
 \  
