@@ -8,5 +8,5 @@ from_cards_files <- list.files(path=".", pattern = "\\.Rmd$")
 files <- c(from_base_files, from_cards_files)
 
 for (f in files){
-  render(f)
+  render(f, output_format="all")
 }

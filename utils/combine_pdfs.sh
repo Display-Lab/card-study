@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-pdftk card*.pdf cat output combined.pdf
+# Use from project root directory
+pdftk cards/card*.pdf cat output cards/cards_combined.pdf
