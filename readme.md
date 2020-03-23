@@ -6,6 +6,7 @@
 - Display Lab packages
   - Pictoralist
   - Spekex
+- XeLatex
 
 ### Installing Display Lab Packages
 Easiest way is using the devtools packages.
@@ -44,11 +45,5 @@ For Linux or MacOS users that have Rscript on their PATH
 Rscript --default-packages=rmarkdown,pictoralist -e 'rmarkdown::render("path/to/cardX.Rmd")
 ```
 
-## Generate all cards
-For Linux or MacOS users that have Rscript on their PATH, there is a provided utility for thisin the utilities directory.
-It assumes it is being run from the project root directory.
-
-```sh
-Rscript --default-packages=rmarkdown,pictoralist utils/render_all_cards.R
-```
-
+### Generate all cards
+From RStudio, open the script `utils/render_all_cards.R`.  Press the `Source` button to run this file, or run it manually.
