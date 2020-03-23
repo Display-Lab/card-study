@@ -2,7 +2,14 @@
 title: "card4"
 author: "DISPLAY Lab"
 date: "2020-03-20"
-output: pdf_document
+mainfont: LiberationSerif
+sansfont: LiberationSans
+monofont: LiberationMono
+output: 
+  html_document:
+    theme: readable
+  pdf_document:
+    latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +31,7 @@ goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
 ```
 
-**To:** You (Anesthesia Provider)@yourhospital.com
+**To:** Shah, Nirav <nirshah@med.umich.edu>
 
 **From:** mpog-quality@med.umich.edu
 
@@ -33,7 +40,7 @@ scaled_goal <- round(denominator*goal_rate, 1)
 \  
 \  
 
-Dear Dr. X,
+Dear Dr. Shaw,
 
 Your performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), was above the goal of 90% (`r scaled_goal`/`r denominator`).
 

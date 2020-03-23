@@ -2,7 +2,14 @@
 title: "card2"
 author: "DISPLAY Lab"
 date: "2020-03-20"
-output: pdf_document
+mainfont: LiberationSerif
+sansfont: LiberationSans
+monofont: LiberationMono
+output: 
+  html_document:
+    theme: readable
+  pdf_document:
+    latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +25,7 @@ data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p2'
 ```
 
-**To:** You (Anesthesia Provider)@yourhospital.com
+**To:** Shah, Nirav <nirshah@med.umich.edu>
 
 **From:** mpog-quality@med.umich.edu
 
@@ -27,9 +34,11 @@ recipient <- 'p2'
 \  
 \  
 
-Dear Dr. X,
+Dear Dr. Shaw,
 
 You reached the goal for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+
+\ 
 
 ```{r figuregen, echo=FALSE, fig.align='center', fig.width=5, fig.height=3, fig.showtext=TRUE}
   # Run figure generation
@@ -41,5 +50,3 @@ You reached the goal for the measure of [postoperative nausea and vomiting](http
 Sincerely,
 
 The MPOG Quality Team
-
-
