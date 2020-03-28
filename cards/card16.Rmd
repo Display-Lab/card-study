@@ -1,7 +1,7 @@
 ---
-title: "card 16"
+title: "email card 16"
 author: "DISPLAY Lab"
-date: "2020-03-23"
+date: "2020-03-28"
 mainfont: LiberationSerif
 sansfont: LiberationSans
 monofont: LiberationMono
@@ -26,23 +26,26 @@ goal_rate <- 0.90
 filter <- data$id == recipient & data$time == max(data$time)
 numerator <- data[filter,'numer'][[1]]
 denominator <- data[filter,'denom'][[1]]
+percent_performance <-round((numerator/denominator)*100, 0)
+
+
 # Scale goal to observed denominator.  Truncate to single decimal place
 goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
 ```
 
-**To:** Shah, Nirav <nirshah@med.umich.edu>
+**To:** Anesthetic, Jane \<dranesthetic@med.example.com\>
 
 **From:** mpog-quality@med.umich.edu
 
-**Subject:** You have an opportunity to improve on PONV 03
+**Subject:** You may have an opportunity to improve PONV 03
 
 \  
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-Your performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), was below the goal of 90% (`r scaled_goal`/`r denominator`).
+Y ou may have an opportunity to improve your performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), which is below the goal of 90% at `r percent_performance`% (`r numerator`/`r denominator`).
 
 \  
 

@@ -1,7 +1,7 @@
 ---
-title: "card 7"
+title: "email card 7"
 author: "DISPLAY Lab"
-date: "2020-03-23"
+date: "2020-03-28"
 mainfont: LiberationSerif
 sansfont: LiberationSans
 monofont: LiberationMono
@@ -25,27 +25,18 @@ data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p5'
 ```
 
-**To:** Shah, Nirav <nirshah@med.umich.edu>
+**To:** Anesthetic, Jane \<dranesthetic@med.example.com\>
 
 **From:** mpog-quality@med.umich.edu
 
-**Subject:** You have fallen below the goal for PONV 03
+**Subject:** You are not a top performer for PONV 03
 
 \  
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-You did not exceed the peer average for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
-
-\_
-
-```{r figuregen, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.width=5, fig.height=5, fig.showtext=TRUE}
-  # Run figure generation
-  card_env$run(recipient, data, list())
-```
-
-\  
+You are not a top performer for [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
 
 Sincerely,
 

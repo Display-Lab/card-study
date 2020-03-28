@@ -1,7 +1,7 @@
 ---
-title: "card 2"
+title: "email card 2"
 author: "DISPLAY Lab"
-date: "2020-03-23"
+date: "2020-03-28"
 mainfont: LiberationSerif
 sansfont: LiberationSans
 monofont: LiberationMono
@@ -24,8 +24,7 @@ source(file='fig_single_bar.R', local=card_env)
 data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p2'
 ```
-
-**To:** Shah, Nirav <nirshah@med.umich.edu>
+**To:** Anesthetic, Jane \<dranesthetic@med.example.com\>
 
 **From:** mpog-quality@med.umich.edu
 
@@ -34,9 +33,9 @@ recipient <- 'p2'
 \  
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-You reached the goal for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+You reached the goal for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 \ 
 
