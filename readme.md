@@ -19,7 +19,7 @@ devtools::install_github("Display-Lab/pictoralist")
 devtools::install_github("Display-Lab/spekex")
 ```
 
-### Installing Pictoralist Required Librarires
+### Installing Pictoralist Required Libraries
 Pictoralist requires the sf package to handle shape files.  Installing the dependencies for the sf package might be more difficult than other packages.  See [the sf package page](https://r-spatial.github.io/sf/)
 
 ### Rmarkdown and requirements for creating pdfs
