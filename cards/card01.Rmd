@@ -9,7 +9,7 @@ output:
       in_header: "preamble.tex"
   html_document:
     theme: readable
-geometry: top=1cm,bottom=1cm,left=3cm
+geometry: top=2cm,bottom=1cm,left=3cm
 ---
 
 ```{r setup, include=FALSE}
@@ -47,8 +47,8 @@ You exceeded the peer average for the measure of [postoperative nausea and vomit
 Sincerely,
 
 The MPOG Quality Team
-
-\vspace{0.75cm}\ 
+  
+\vspace{1.0cm}\ 
 ...
 \vspace{1.0cm}\ 
 
@@ -62,7 +62,7 @@ You exceeded the peer average for the measure of [postoperative nausea and vomit
 
 ```{r figureB, echo=FALSE, warning=FALSE, results='hide', fig.width=5, fig.height=3, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, list())
+  card_env_B$run(recipient, data, list())
 ```
 
 \  

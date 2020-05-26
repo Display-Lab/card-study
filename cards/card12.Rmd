@@ -1,20 +1,20 @@
 ---
-title: "card 12"
-author: "DISPLAY Lab"
-date: "2020-03-23"
 mainfont: LiberationSerif
 sansfont: LiberationSans
 monofont: LiberationMono
 output: 
   pdf_document:
     latex_engine: xelatex
+    includes:
+      in_header: "preamble.tex"
   html_document:
     theme: readable
+geometry: top=2cm,bottom=1cm,left=3cm
 ---
 
 ```{r setup, include=FALSE}
 library(pictoralist)
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 # Load data and define recipient
 # Use same performer as card 2
@@ -31,13 +31,26 @@ goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
 ```
 
-**To:** Shah, Nirav <nirshah@med.umich.edu>
+<!-- CARD A -->
+**Card A**
+\  
 
-**From:** mpog-quality@med.umich.edu
+Dear Dr. Shaw,
 
-**Subject:** Your performance is above the goal for PONV 03
+Your performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), was above the goal of 90% (`r scaled_goal`/`r denominator`).
 
 \  
+
+Sincerely,
+
+The MPOG Quality Team
+  
+\vspace{1.0cm}\ 
+...
+\vspace{1.0cm}\ 
+
+<!-- CARD B -->
+**Card B**
 \  
 
 Dear Dr. Shaw,
