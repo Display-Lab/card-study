@@ -1,48 +1,68 @@
 ---
-title: "card 14"
-author: "DISPLAY Lab"
-date: "2020-03-23"
 mainfont: LiberationSerif
 sansfont: LiberationSans
 monofont: LiberationMono
 output: 
   pdf_document:
     latex_engine: xelatex
+    includes:
+      in_header: "preamble.tex"
   html_document:
     theme: readable
+geometry: top=2cm,bottom=1cm,left=3cm
 ---
 
 ```{r setup, include=FALSE}
 library(pictoralist)
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
-# Load the source code for the figure
-card_env <- new.env()
-source(file='fig_single_bar.R', local=card_env)
+# Load the source code for the figure of card A
+card_env_A <- new.env()
+source(file='fig_comp_line.R', local=card_env_A)
+
+# Load the source code for the figure of card B
+card_env_B <- new.env()
+source(file='fig_comp_line.R', local=card_env_B)
 
 # Load data and define recipient
 data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p13'
 ```
 
-**To:** Shah, Nirav <nirshah@med.umich.edu>
-
-**From:** mpog-quality@med.umich.edu
-
-**Subject:** Your performance has not improved for PONV 03
-
-\  
+<!-- CARD A -->
+**Card A**
 \  
 
 Dear Dr. Shaw,
 
 Your performance has not improved toward the goal for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
-\ 
-
-```{r figuregen, echo=FALSE, fig.align='center', fig.width=5, fig.height=3, fig.showtext=TRUE}
+```{r figureA, echo=FALSE, fig.align='center', fig.width=5, fig.height=3, fig.showtext=TRUE}
   # Run figure generation
-  card_env$run(recipient, data, list())
+  card_env_A$run(recipient, data, list())
+```
+
+\  
+
+Sincerely,
+
+The MPOG Quality Team
+  
+\vspace{1.0cm}\ 
+...
+\vspace{1.0cm}\ 
+
+<!-- CARD B -->
+**Card B**
+\  
+
+Dear Dr. Shaw,
+
+Your performance has not improved toward the goal for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+
+```{r figureB, echo=FALSE, fig.align='center', fig.width=5, fig.height=3, fig.showtext=TRUE}
+  # Run figure generation
+  card_env_A$run(recipient, data, list())
 ```
 
 \  
