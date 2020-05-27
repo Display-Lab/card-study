@@ -16,6 +16,13 @@ geometry: top=2cm,bottom=1cm,left=3cm
 library(pictoralist)
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
+# No figure for card A
+
+# Load the source code for the figure of card B
+card_env_B <- new.env()
+source(file='fig_single_bar.R', local=card_env_B)
+
+
 # Load data and define recipient
 # Use same performer as card 2
 data <- pictoralist::read_data('synth_data.csv')
@@ -31,15 +38,22 @@ goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
 ```
 
-<!-- CARD A -->
-**Card A**
+
+
+
+<!-- CARD 4A -->
+**Card 4A**
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-Your performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), was above the goal of 90% (`r scaled_goal`/`r denominator`).
+Congratulations on your high performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), which above the goal of 90% (`r scaled_goal`/`r denominator`).
 
 \  
+
+A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
+
+More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
 
 Sincerely,
 
@@ -49,15 +63,25 @@ The MPOG Quality Team
 ...
 \vspace{1.0cm}\ 
 
-<!-- CARD B -->
-**Card B**
+<!-- CARD 4B -->
+**Card 4B**
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-Your performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), was above the goal of 90% (`r scaled_goal`/`r denominator`).
+Congratulations on your high performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+
+```{r figureB, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.width=5, fig.height=5, fig.showtext=TRUE}
+  # Run figure generation
+  card_env_B$run(recipient, data, list())
+```
+
 
 \  
+
+A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
+
+More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
 
 Sincerely,
 

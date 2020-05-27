@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 # Load the source code for the figure of card A
 card_env_A <- new.env()
-source(file='fig_comp_line.R', local=card_env_A)
+source(file='fig_single_bar.R', local=card_env_A)
 
 # Load the source code for the figure of card B
 card_env_B <- new.env()
@@ -29,13 +29,13 @@ data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p13'
 ```
 
-<!-- CARD A -->
-**Card A**
+<!-- CARD 14A -->
+**Card 14A**
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-Your performance has not improved toward the goal for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+Your performance has not improved for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 ```{r figureA, echo=FALSE, fig.align='center', fig.width=5, fig.height=3, fig.showtext=TRUE}
   # Run figure generation
@@ -43,6 +43,10 @@ Your performance has not improved toward the goal for the measure of [postoperat
 ```
 
 \  
+
+A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
+
+More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
 
 Sincerely,
 
@@ -52,20 +56,24 @@ The MPOG Quality Team
 ...
 \vspace{1.0cm}\ 
 
-<!-- CARD B -->
-**Card B**
+<!-- CARD 14B -->
+**Card 14B**
 \  
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-Your performance has not improved toward the goal for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+Your performance has not improved for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 ```{r figureB, echo=FALSE, fig.align='center', fig.width=5, fig.height=3, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, list())
+  card_env_B$run(recipient, data, list())
 ```
 
 \  
+
+A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
+
+More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
 
 Sincerely,
 
