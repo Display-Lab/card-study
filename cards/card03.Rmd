@@ -35,7 +35,7 @@ Dear Dr. Anesthetic,
 
 You are a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
-```{r figureA, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.width=5, fig.height=5, fig.showtext=TRUE}
+```{r figureA, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
   card_env_A$run(recipient, data, list())
 ```
