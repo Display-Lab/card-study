@@ -10,6 +10,7 @@ output:
   html_document:
     theme: readable
 geometry: top=0cm,bottom=0cm,left=3cm
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -38,7 +39,7 @@ Dear Dr. Anesthetic,
 
 You have become a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
-```{r figureA, echo=FALSE, warning=FALSE, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
+```{r figureA, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
   card_env_A$run(recipient, data, list())
 ```
@@ -62,7 +63,7 @@ Dear Dr. Anesthetic,
 
 You have become a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
-```{r figureB, echo=FALSE, warning=FALSE, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
+```{r figureB, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
   card_env_B$run(recipient, data, list())
 ```
