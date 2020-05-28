@@ -6,7 +6,7 @@ library(pictoralist)
 
 # Copy of SingleBar template
 
-run <- function(recipient, data, spek){
+run <- function(recipient, data, comparator_title="GOAL"){
   # Creates achievable benchmark line with correct dashed legend
   benchmarks <- c(.90, .90, .90, .90)
 
@@ -41,6 +41,9 @@ run <- function(recipient, data, spek){
     geom_label(mapping=mapping, data=histogram_nums, stroke=3, nudge_y = -0.05)
   }
 
+  line_scale_vals <- c(2)
+  names(line_scale_vals) <- comparator_title
+  
   # y axis labels
   breaks_y <- c(0.20, 0.4, 0.6, 0.8, 1.0)
   labels_y <- c("20%", "40%", "60%", "80%", "100%")
@@ -52,9 +55,9 @@ run <- function(recipient, data, spek){
     scale_x_date(date_labels = "%b") +
     scale_y_continuous(limits=c(0,1.1), expand=c(0,0),
                        breaks=breaks_y, labels = labels_y) +
-    geom_line(mapping=aes(y=benchmarks, linetype="GOAL"),
+    geom_line(mapping=aes(y=benchmarks, linetype=comparator_title),
               size=1, lineend="round", color=PT$DL_GRAY) +
-    scale_linetype_manual(values = c("GOAL" = 2)) +
+    scale_linetype_manual(values = line_scale_vals) +
     scale_color_discrete(guide="none") +
     theme(legend.title = element_blank(),
           legend.key.size =  unit(0.5, "in"),
