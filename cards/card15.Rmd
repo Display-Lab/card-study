@@ -9,7 +9,8 @@ output:
       in_header: "preamble.tex"
   html_document:
     theme: readable
-geometry: top=2cm,bottom=1cm,left=3cm
+geometry: top=0cm,bottom=0cm,left=3cm
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -20,52 +21,50 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 card_env_A <- new.env()
 source(file='fig_comp_line.R', local=card_env_A)
 
-# Load the source code for the figure of card B
-card_env_B <- new.env()
-source(file='fig_comp_line.R', local=card_env_B)
+# No figure for card B
 
 # Load data and define recipient (Use same performer as card 2)
 data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p13'
 ```
 
-<!-- CARD A -->
-**Card A**
-\  
+<!-- CARD 15A -->
+\vspace{2.0cm}\ 
 
-Dear Dr. Shaw,
+**Card 15A**
 
-You are performing below the peer average for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+Dear Dr. Anesthetic,
 
-```{r figureA, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.width=5, fig.height=5, fig.showtext=TRUE}
+You are not a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+
+```{r figureA, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, list())
+  card_env_A$run(recipient, data)
 ```
 
-\  
+
+A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
+
+More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
 
 Sincerely,
 
 The MPOG Quality Team
   
-\vspace{1.0cm}\ 
+\vspace{2.5cm} 
 ...
-\vspace{1.0cm}\ 
+\vspace{1.0cm} 
 
-<!-- CARD B -->
-**Card B**
-\  
+<!-- CARD 15B -->
+**Card 15B**
 
-Dear Dr. Shaw,
+Dear Dr. Anesthetic,
 
-You are performing below the peer average for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+You are not a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
 
-```{r figureB, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.width=5, fig.height=5, fig.showtext=TRUE}
-  # Run figure generation
-  card_env_A$run(recipient, data, list())
-```
+A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
 
-\  
+More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
 
 Sincerely,
 

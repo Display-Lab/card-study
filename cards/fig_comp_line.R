@@ -6,7 +6,7 @@ library(pictoralist)
 
 # Copied from SingleLineGraph
 
-run <- function(recipient, data, spek){
+run <- function(recipient, data, comparator_title="Peer Ave."){
   # Geenrate benchmark performance by mean of all performers
   benchmark_perf <- data %>%
     group_by(time) %>%
@@ -57,7 +57,7 @@ run <- function(recipient, data, spek){
                       breaks=breaks_y, labels = labels_y) +
    scale_x_date(date_labels = "%b", expand=c(0.1,0)) +
    scale_shape_identity(guide = FALSE) +
-   scale_color_identity(labels=c("You", "Peer Ave."), guide = guide_legend(title=NULL)) +
+   scale_color_identity(labels=c("You", comparator_title), guide = guide_legend(title=NULL)) +
    geom_label(mapping = aes(label=perf_label),
               nudge_y = 0.1, fill=PT$DL_BLUE,
               color=PT$DL_FILL, label.r = unit(0, "lines"), label.size=0,

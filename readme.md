@@ -38,12 +38,21 @@ tinytex::install_tinytex()  # install TinyTeX
 1. Open the .Rmd file associated with the card you want to generate
 1. Click the "Knit" button 
 
-### From the command line
-For Linux or MacOS users that have Rscript on their PATH
+### Using Command Line
+For Linux or MacOS users that have Rscript on their PATH, from the project root directory run the following replacing X with the card number.
 
 ```sh
-Rscript --default-packages=rmarkdown,pictoralist -e 'rmarkdown::render("path/to/cardX.Rmd")
+Rscript -e 'rmarkdown::render("cards/cardX.Rmd")'
 ```
 
-### Generate all cards
+## Generate all cards
+
+### Using RStudio IDE
 From RStudio, open the script `utils/render_all_cards.R`.  Press the `Source` button to run this file, or run it manually.
+
+### Using Command Line
+From the project root directory run the following.  
+
+```sh
+Rscript "utils/render_all.R"
+```

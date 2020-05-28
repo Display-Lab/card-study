@@ -1,5 +1,3 @@
-#!/usr/bin/env Rscript
-
 # Render all cards
 library(rmarkdown)
 
@@ -8,6 +6,6 @@ from_cards_files <- list.files(path=".", pattern = "\\.Rmd$")
 files <- c(from_base_files, from_cards_files)
 
 for (f in files){
-  render(f, output_format="all", output_dir="build/")
+  render(f, output_format="pdf_document", output_dir="build/")
 }
 
