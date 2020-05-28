@@ -54,5 +54,5 @@ From RStudio, open the script `utils/render_all_cards.R`.  Press the `Source` bu
 From the project root directory run the following.  
 
 ```sh
-Rscript -e 'rmarkdown::render("utils/render_all_cards.R")'
+Rscript "utils/render_all.R"
 ```
