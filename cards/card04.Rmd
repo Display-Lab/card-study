@@ -71,7 +71,7 @@ Congratulations on your high performance, `r numerator`/`r denominator`, for the
 
 ```{r figureB, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_B$run(recipient, data)
+  card_env_B$run(recipient, data, "GOAL")
 ```
 
 

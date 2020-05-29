@@ -41,7 +41,7 @@ Your performance has remained low for the measure [postoperative nausea and vomi
 
 ```{r figureA, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data)
+  card_env_A$run(recipient, data, "Peer Ave.")
 ```
 
 
@@ -66,7 +66,7 @@ Your performance has remained low for the measure [postoperative nausea and vomi
 
 ```{r figureB, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_B$run(recipient, data)
+  card_env_B$run(recipient, data, "Peer Ave.")
 ```
 
 
