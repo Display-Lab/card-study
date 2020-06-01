@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 # Load the source code for the figure of card B
 card_env_B <- new.env()
-source(file='fig_single_bar.R', local=card_env_B)
+source(file='fig_comp_bar.R', local=card_env_B)
 
 # Load data and define recipient
 # Use same performer as card 2
