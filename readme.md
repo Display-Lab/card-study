@@ -42,7 +42,7 @@ tinytex::install_tinytex()  # install TinyTeX
 For Linux or MacOS users that have Rscript on their PATH, from the project root directory run the following replacing X with the card number.
 
 ```sh
-Rscript -e 'rmarkdown::render("cards/cardX.Rmd")'
+Rscript -e 'rmarkdown::render("cards/cardX.Rmd", output_dir="build/")'
 ```
 
 ## Generate all cards

@@ -43,13 +43,7 @@ You reached the goal this month for the measure [postoperative nausea and vomiti
   card_env_A$run(recipient, data, "GOAL")
 ```
 
-A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
-
-More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
-
-Sincerely,
-
-The MPOG Quality Team
+\signoff
   
 \vspace{2.5cm} 
 ...
@@ -67,10 +61,4 @@ You reached the goal this month for the measure [postoperative nausea and vomiti
   card_env_B$run(recipient, data, "GOAL")
 ```
 
-A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
-
-More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
-
-Sincerely,
-
-The MPOG Quality Team
+\signoff

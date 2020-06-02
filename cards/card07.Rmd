@@ -39,15 +39,7 @@ Dear Dr. Anesthetic,
 
 You are not a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
 
-
-
-A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
-
-Information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
-
-Sincerely,
-
-The MPOG Quality Team
+\signoff
   
 \vspace{8.5cm} 
 ...
@@ -65,11 +57,4 @@ You are not a top performer this month for the measure [postoperative nausea and
   card_env_B$run(recipient, data, "Peer Ave.")
 ```
 
-
-A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
-
-Information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
-
-Sincerely,
-
-The MPOG Quality Team
+\signoff

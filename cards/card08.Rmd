@@ -52,14 +52,7 @@ You may have an opportunity to improve your performance for the measure [postope
   card_env_A$run(recipient, data, "GOAL")
 ```
 
-
-A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
-
-More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
-
-Sincerely,
-
-The MPOG Quality Team
+\signoff
   
 \vspace{2.0cm} 
 ...
@@ -72,11 +65,4 @@ Dear Dr. Anesthetic,
 
 You may have an opportunity to improve your performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03). This month your performance was `r numerator`/`r denominator`, below the goal of 90% (`r scaled_goal`/`r denominator`).
 
-
-A case-by-case breakdown of your results are available at your [clinical quality dashboard](https://www.aspirecqi.org/HIEBus/identityserver/local/login?signInId=2b0fc382a1904b699377c926723c9eb4).
-
-More information about the rationale for the measure PONV 03 and how it is calculated [are available here](https://spec.mpog.org/Spec/Public/33).
-
-Sincerely,
-
-The MPOG Quality Team
+\signoff
