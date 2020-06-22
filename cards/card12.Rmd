@@ -44,7 +44,7 @@ scaled_goal <- round(denominator*goal_rate, 1)
 
 **Card 12A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Congratulations on your high performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 ```{r figureA, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
@@ -61,7 +61,7 @@ Congratulations on your high performance for the measure [postoperative nausea a
 <!-- CARD 12B -->
 **Card 12B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Congratulations on your high performance for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), `r numerator`/`r denominator`, which was above the goal of 90% (`r scaled_goal`/`r denominator`).
 

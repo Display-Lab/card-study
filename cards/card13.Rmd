@@ -35,7 +35,7 @@ recipient <- 'p13'
 
 **Card 13A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance has remained low for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -53,7 +53,7 @@ Your performance has remained low for the measure [postoperative nausea and vomi
 <!-- CARD 13B -->
 **Card 13B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance has remained low for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 

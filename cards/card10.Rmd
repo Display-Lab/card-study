@@ -35,7 +35,7 @@ recipient <- 'p9'
 
 **Card 10A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance is consistently high for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -53,7 +53,7 @@ Your performance is consistently high for the measure [postoperative nausea and 
 <!-- CARD 10B -->
 **Card 10B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance is consistently high for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 

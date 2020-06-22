@@ -34,7 +34,7 @@ recipient <- 'p2'
 
 **Card 2A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You reached the goal this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -52,7 +52,7 @@ You reached the goal this month for the measure [postoperative nausea and vomiti
 <!-- CARD 2B -->
 **Card 2B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You reached the goal this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 

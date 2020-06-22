@@ -35,7 +35,7 @@ recipient <- 'p5'
 
 **Card 6A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance dropped below the goal for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -53,7 +53,7 @@ Your performance dropped below the goal for the measure [postoperative nausea an
 <!-- CARD 6B -->
 **Card 6B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance dropped below the goal for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 

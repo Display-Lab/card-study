@@ -33,7 +33,7 @@ recipient <- 'p13'
 
 **Card 15A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You are not a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -51,7 +51,7 @@ You are not a top performer this month for the measure [postoperative nausea and
 <!-- CARD 15B -->
 **Card 15B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You are not a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
 
