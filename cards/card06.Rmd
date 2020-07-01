@@ -41,7 +41,7 @@ Your performance dropped below the goal for the measure [postoperative nausea an
 
 ```{r figureA, echo=FALSE, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, "GOAL")
+  card_env_A$run(recipient, data, "Goal")
 ```
 
 \signoff
@@ -59,7 +59,7 @@ Your performance dropped below the goal for the measure [postoperative nausea an
 
 ```{r figureB, echo=FALSE, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, "GOAL")
+  card_env_A$run(recipient, data, "Goal")
 ```
 
 \signoff

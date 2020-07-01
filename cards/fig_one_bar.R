@@ -57,7 +57,7 @@ run <- function(recipient, data, comparator_title="GOAL"){
     scale_x_discrete(expand=c(0,1)) +
     geom_segment(mapping=aes(y=benchmarks, yend=benchmarks, x=0.5, xend=1.5, linetype=comparator_title),
                  size=1, lineend="round", color=PT$DL_GRAY) +
-    geom_text(y=benchmarks, x=1.8, label=comparator_title) +
+    geom_text(y=benchmarks, x=1.8, label=comparator_title, family=PT$DL_FONT,) +
     scale_linetype_manual(values = line_scale_vals, guide="none") +
     scale_color_discrete(guide="none")
 

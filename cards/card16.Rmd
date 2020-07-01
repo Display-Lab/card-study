@@ -45,7 +45,9 @@ scaled_goal <- round(denominator*goal_rate, 1)
 
 Dear Alex,
 
-You may have an opportunity to improve your performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), which was `r numerator`/`r denominator`, below the goal of 90% (`r scaled_goal`/`r denominator`).
+You may have an opportunity to improve your performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
+
+This month your performance was `r numerator`/`r denominator`, below the goal of 90% (`r scaled_goal`/`r denominator`).
 
 \signoff
   
@@ -62,7 +64,7 @@ You may have an opportunity to improve your performance for the measure, [postop
 
 ```{r figureB, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_B$run(recipient, data, "GOAL")
+  card_env_B$run(recipient, data, "Goal")
 ```
 
 \signoff
