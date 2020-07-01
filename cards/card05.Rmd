@@ -35,7 +35,7 @@ recipient <- 'p5'
 
 **Card 5A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You are no longer a top performer for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -53,13 +53,13 @@ You are no longer a top performer for the measure [postoperative nausea and vomi
 <!-- CARD 5B -->
 **Card 5B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You are no longer a top performer for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 ```{r figureB, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, "Peer Ave.")
+  card_env_B$run(recipient, data, "Peer Ave.")
 ```
 
 \signoff

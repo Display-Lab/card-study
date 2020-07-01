@@ -35,13 +35,13 @@ recipient <- 'p13'
 
 **Card 14A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance has not improved for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 ```{r figureA, echo=FALSE, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, "GOAL")
+  card_env_A$run(recipient, data, "Goal")
 ```
 
 \signoff
@@ -53,13 +53,13 @@ Your performance has not improved for the measure of [postoperative nausea and v
 <!-- CARD 14B -->
 **Card 14B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Your performance has not improved for the measure of [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 ```{r figureB, echo=FALSE, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_B$run(recipient, data, "GOAL")
+  card_env_B$run(recipient, data, "Goal")
 ```
 
 \signoff

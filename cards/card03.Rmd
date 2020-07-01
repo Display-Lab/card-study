@@ -28,6 +28,19 @@ source(file='fig_one_bar.R', local=card_env_A)
 # Load data and define recipient (Use same performer as card 2)
 data <- pictoralist::read_data('synth_data.csv')
 recipient <- 'p2'
+goal_rate <- 0.90
+
+# get most recent performance of performer
+filter <- data$id == recipient & data$time == max(data$time)
+numerator <- data[filter,'numer'][[1]]
+denominator <- data[filter,'denom'][[1]]
+performance_percent <- paste(round(numerator/denominator, 3)*100, "%", sep="")
+
+# Scale goal to observed denominator.  Truncate to single decimal place
+goal_percent <- paste(100*goal_rate, "%", sep="")
+scaled_goal <- round(denominator*goal_rate, 1)
+
+
 ```
 
 <!-- CARD 3A -->
@@ -35,7 +48,7 @@ recipient <- 'p2'
 
 **Card 3A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You are a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
@@ -53,8 +66,10 @@ You are a top performer this month for the measure [postoperative nausea and vom
 <!-- CARD 3B -->
 **Card 3B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 You are a top performer this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
+
+Your performance was `r performance_percent` (`r numerator`/`r denominator`), above the peer average of 90% (`r scaled_goal`/`r denominator`).
 
 \signoff

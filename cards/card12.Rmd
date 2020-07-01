@@ -34,6 +34,8 @@ goal_rate <- 0.90
 filter <- data$id == recipient & data$time == max(data$time)
 numerator <- data[filter,'numer'][[1]]
 denominator <- data[filter,'denom'][[1]]
+performance_percent <- paste(round(numerator/denominator, 3)*100, "%", sep="")
+
 # Scale goal to observed denominator.  Truncate to single decimal place
 goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
@@ -44,12 +46,12 @@ scaled_goal <- round(denominator*goal_rate, 1)
 
 **Card 12A**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
 Congratulations on your high performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 ```{r figureA, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, "GOAL")
+  card_env_A$run(recipient, data, "Goal")
 ```
 
 \signoff
@@ -61,8 +63,11 @@ Congratulations on your high performance for the measure [postoperative nausea a
 <!-- CARD 12B -->
 **Card 12B**
 
-Dear Dr. Anesthetic,
+Dear Alex,
 
-Congratulations on your high performance for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), `r numerator`/`r denominator`, which was above the goal of 90% (`r scaled_goal`/`r denominator`).
+Congratulations on your high performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
+
+Your performance was `r performance_percent` (`r numerator`/`r denominator`), above the goal of 90% (`r scaled_goal`/`r denominator`).
+
 
 \signoff
