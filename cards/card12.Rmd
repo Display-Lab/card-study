@@ -34,6 +34,8 @@ goal_rate <- 0.90
 filter <- data$id == recipient & data$time == max(data$time)
 numerator <- data[filter,'numer'][[1]]
 denominator <- data[filter,'denom'][[1]]
+performance_percent <- paste(round(numerator/denominator, 3)*100, "%", sep="")
+
 # Scale goal to observed denominator.  Truncate to single decimal place
 goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
@@ -63,6 +65,9 @@ Congratulations on your high performance for the measure [postoperative nausea a
 
 Dear Alex,
 
-Congratulations on your high performance for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), `r numerator`/`r denominator`, which was above the goal of 90% (`r scaled_goal`/`r denominator`).
+Congratulations on your high performance for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
+
+Your performance was `r performance_percent` (`r numerator`/`r denominator`), above the goal of 90% (`r scaled_goal`/`r denominator`).
+
 
 \signoff

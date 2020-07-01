@@ -36,6 +36,8 @@ goal_rate <- 0.90
 filter <- data$id == recipient & data$time == max(data$time)
 numerator <- data[filter,'numer'][[1]]
 denominator <- data[filter,'denom'][[1]]
+performance_percent <- paste(round(numerator/denominator, 3)*100, "%", sep="")
+
 # Scale goal to observed denominator.  Truncate to single decimal place
 goal_percent <- paste(100*goal_rate, "%", sep="")
 scaled_goal <- round(denominator*goal_rate, 1)
@@ -47,7 +49,9 @@ scaled_goal <- round(denominator*goal_rate, 1)
 
 Dear Alex,
 
-Congratulations on your high performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03), which above the goal of 90% (`r scaled_goal`/`r denominator`).
+Congratulations on your high performance this month for the measure [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03).
+
+Your performance was `r performance_percent` (`r numerator`/`r denominator`), above the goal of 90% (`r scaled_goal`/`r denominator`).
 
 \signoff
   
@@ -60,7 +64,7 @@ Congratulations on your high performance, `r numerator`/`r denominator`, for the
 
 Dear Alex,
 
-Congratulations on your high performance, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
+Congratulations on your high performance this month, `r numerator`/`r denominator`, for the measure, [postoperative nausea and vomiting](https://mpog.org/files/quality/measures/ponv-03_spec.pdf) (PONV 03):
 
 ```{r figureB, fig.align='center', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
