@@ -59,7 +59,7 @@ You are no longer a top performer for the measure of [postoperative nausea and v
 
 ```{r figureB, results='hide', fig.width=4, fig.height=2.5, fig.showtext=TRUE}
   # Run figure generation
-  card_env_A$run(recipient, data, "Peer Ave.")
+  card_env_B$run(recipient, data, "Peer Ave.")
 ```
 
 \signoff
